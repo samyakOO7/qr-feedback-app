@@ -1,0 +1,58 @@
+.box-component {
+    width: 50vw; /* Adjust width as needed */
+    padding: auto; /* Increased padding for better spacing */
+    background-color: #ffffff; /* White background for the box */
+    color: #333; /* Darker text color for better readability */
+    margin: 20px auto; /* Center the box and add margin */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-group {
+    margin-bottom: 15px; /* Space between form elements */
+  }
+  label {
+    display: block;
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: bold; /* Bold label text */
+    font-size: x-large;
+  }
+  
+  button {
+    background-color: #3d34ee; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 2% 10%; /* Increased padding for a better button size */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Consistent font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    margin-bottom: 50px;
+  }
+  
+  
+  button:hover {
+    background-color: #0404a5; /* Darker button color on hover */
+  }
+  textarea {
+    width: 40vw;
+    height: 150px; /* Adjust height as needed */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 6px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+    font-size: 1em; /* Consistent font size */
+    margin-bottom: 1%;
+    box-shadow: inset 0 2px 4px rgba(37, 31, 226, 0.1); /* Subtle inset shadow */
+  }
+  
+.thank-you {
+    margin-top: 20%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}

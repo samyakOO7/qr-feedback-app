@@ -1,0 +1,22 @@
+.smiley-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 50%; /* Adjust width as needed */
+    height: 60%;
+  }
+  
+  .smiley-icon {
+    width: 18%; /* Adjust size to fit well within the container */
+    margin: 3%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  
+  .smiley-icon:hover {
+    transform: scale(1.1); /* Zoom in effect on hover, if desired */
+  }
+  

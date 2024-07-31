@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; 
+  background: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  font-family: 'Cairo', Arial, sans-serif;
+  color: #fff;
+}
+
+.container-fluid {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-content {
+  text-align: center;
+  position: relative;
+  height: 30vh; /* Reduced height */
+}
+
+.cloud-animation {
+  width: 80%;
+  position: relative;
+  animation: cloud 10s linear 0.1s infinite;
+  margin: auto;
+}
+
+.cloud-animation2 {
+  width: 80%;
+  position: relative;
+  animation: cloud 7s linear 0.1s infinite;
+  margin: auto;
+}
+.cloud-animation3 {
+  width: 80%;
+  position: relative;
+  animation: cloud 6s linear 0.1s infinite;
+  margin: auto ;
+}
+@keyframes cloud {
+  0% {transform: translateX(300%);}
+  50% {transform: translateX(-100%);}
+  100% {transform: translateX(-500%);}
+}
+@keyframes cloud {
+  0% {transform: translateX(300%);}
+  50% {transform: translateX(-100%);}
+  100% {transform: translateX(-500%);}
+}
+@keyframes cloud {
+  0% {transform: translateX(300%);}
+  50% {transform: translateX(-100%);}
+  100% {transform: translateX(-500%);}
+}
+
+.error-code {
+  font-size: 120px; /* Adjusted font size */
+  position: relative;
+  bottom: 90%; /* Adjusted bottom position */
+  text-shadow: 5px 5px 10px #000;
+}
+
+.error-message {
+  font-size: 18px; /* Adjusted font size */
+  position: relative;
+  bottom: 90%; /* Adjusted bottom position */
+  text-shadow: 1px 2px 1.5px #000;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
