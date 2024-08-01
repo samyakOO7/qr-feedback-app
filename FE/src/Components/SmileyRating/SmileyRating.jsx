@@ -11,14 +11,15 @@ const smileyIcons = [smiley1, smiley2, smiley3, smiley4, smiley5];
 const SmileyRating = () => {
   const [rating, setRating] = useState(0);
 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   const handleMouseEnter = (index) => {
-    setRating(index + 1);
+    setHoveredIndex(index);
   };
 
   const handleMouseLeave = () => {
-    setRating(0);
+    setHoveredIndex(null);
   };
-
   const handleClick = (index) => {
     setRating(index + 1);
   };
@@ -30,10 +31,10 @@ const SmileyRating = () => {
           key={index}
           src={icon}
           alt={`Smiley ${index + 1}`}
-          className={`smiley-icon ${rating > index ? 'active' : ''}`}
+          className={`smiley-icon ${rating === index +1 ? 'active' : ''} ${hoveredIndex === index ? 'hovered' : ''}`}
+          onClick={() => handleClick(index)}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
-          onClick={() => handleClick(index)}
         />
       ))}
     </div>

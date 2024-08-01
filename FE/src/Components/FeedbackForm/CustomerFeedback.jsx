@@ -16,12 +16,13 @@ export const CustomerFeedback = () => {
 
   return (
     <div className="customer-feedback">
-      <h1><center>Customer Feedback</center></h1>
+     
       <br/>
       {submitted ? (
         <p className='thank-you'><center>Thank you for your feedback!</center></p>
       ) : (
         <div className="box-component">
+           <h1><center>Customer Feedback</center></h1>
           <center>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
